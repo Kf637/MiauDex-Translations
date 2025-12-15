@@ -281,7 +281,15 @@
     "rank_new_voter": "New Voter",
     "efficiency_excellent": "Excellent",
     "efficiency_good": "Good",
-    "efficiency_starting": "Getting Started"
+    "efficiency_starting": "Getting Started",
+    "thank_you_title": "🗳️ Thank You for Voting!",
+    "thank_you_description": "Your support means everything to us! Here's your reward:",
+    "new_cat_received": "🐱 New Cat Received",
+    "whats_next": "🎉 What's Next?",
+    "whats_next_description": "Use `/cat` to meet more furry friends!\nCheck your `/gallery` to see your collection!",
+    "footer_text": "Thank you for supporting MiauDex! 💖",
+    "vote_again_button": "Vote Again in 12h",
+    "official_server_button": "Visit Official Server 🐾"
   },
   "trade": {
     "proposal_title": "🔄 Trade Proposal",

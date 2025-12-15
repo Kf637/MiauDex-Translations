@@ -281,7 +281,15 @@
     "rank_new_voter": "Nowy Głosujący",
     "efficiency_excellent": "Doskonała",
     "efficiency_good": "Dobra",
-    "efficiency_starting": "Rozpoczyna"
+    "efficiency_starting": "Rozpoczyna",
+    "thank_you_title": "🗳️ Dziękujemy za Vote!",
+    "thank_you_description": "Twoje wsparcie znaczy dla nas wszystko! Oto Twoja nagroda:",
+    "new_cat_received": "🐱 Otrzymano Nowego Kotka",
+    "whats_next": "🎉 Co Dalej?",
+    "whats_next_description": "Użyj `/kot` aby poznać więcej futrzanych przyjaciół!\nSprawdź swoją `/galeria` aby zobaczyć swoją kolekcję!",
+    "footer_text": "Dziękujemy za wspieranie MiauDex! 💖",
+    "vote_again_button": "Zagłosuj ponownie za 12h",
+    "official_server_button": "Odwiedź Oficjalny Serwer 🐾"
   },
   "trade": {
     "proposal_title": "🔄 Propozycja Wymiany",
@@ -568,7 +576,7 @@
     "cat_details_content": "**Nowa Nazwa:** {{newName}}\n**Rzadkość:** {{rarity}}\n**Właściciel:** {{owner}}",
     "fun_fact": "🎨 Ciekawostka",
     "fun_fact_content": "Czy wiesz? Twój kot będzie pamiętał ten wyjątkowy moment na zawsze! {{newName}} jest teraz gotowy na nowe przygody! 💖",
-    "success_footer": "{{newName}} mówi \"Miau!\" • Przemianowany przez {{owner}}",
+    "success_footer": "{{newName}} mówi \"Miau!\" • Nazwany przez {{owner}}",
     "celebration_message": "🌈 **{{newName}}** świetnie się przyzwyczaja do swojej nowej nazwy! 😻 Wygląda na to, że ją kocha!",
     "celebration_footer": "Twoja kolekcja kotów stała się jeszcze bardziej wyjątkowa! 🌟",
     "command": {

@@ -281,7 +281,15 @@
     "rank_new_voter": "Nuovo Votante",
     "efficiency_excellent": "Eccellente",
     "efficiency_good": "Buona",
-    "efficiency_starting": "Alle Prime Armi"
+    "efficiency_starting": "Alle Prime Armi",
+    "thank_you_title": "🗳️ Grazie per aver Votato!",
+    "thank_you_description": "Il tuo supporto significa tutto per noi! Ecco la tua ricompensa:",
+    "new_cat_received": "🐱 Nuovo Gatto Ricevuto",
+    "whats_next": "🎉 E Adesso?",
+    "whats_next_description": "Usa `/gatto` per incontrare più amici pelosi!\nControlla la tua `/galleria` per vedere la tua collezione!",
+    "footer_text": "Grazie per supportare MiauDex! 💖",
+    "vote_again_button": "Vota di nuovo tra 12h",
+    "official_server_button": "Visita il Server Ufficiale 🐾"
   },
   "trade": {
     "proposal_title": "🔄 Proposta di Scambio",

@@ -281,7 +281,15 @@
     "rank_new_voter": "Ny stemmer",
     "efficiency_excellent": "Utmerket",
     "efficiency_good": "Bra",
-    "efficiency_starting": "Starter"
+    "efficiency_starting": "Starter",
+    "thank_you_title": "🗳️ Takk for din stemme!",
+    "thank_you_description": "Din støtte betyr enormt mye for oss. Som en liten takk vil vi gjerne gi deg en gave.",
+    "new_cat_received": "🐱 Ny katt mottatt",
+    "whats_next": "🎉 Hva nå?",
+    "whats_next_description": "Bruk `/katt` for å møte flere pelskledde venner!\nSjekk `/galleri` for å se samlingen din!",
+    "footer_text": "Takk for at du støtter MiauDex! 💖",
+    "vote_again_button": "Stem igjen om 12 timer",
+    "official_server_button": "Besøk Offisiell Server 🐾"
   },
   "trade": {
     "proposal_title": "🔄 Bytteforslag",

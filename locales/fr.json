@@ -281,7 +281,15 @@
     "rank_new_voter": "Nouveau Votant",
     "efficiency_excellent": "Excellente",
     "efficiency_good": "Bonne",
-    "efficiency_starting": "Premiers pas"
+    "efficiency_starting": "Premiers pas",
+    "thank_you_title": "🗳️ Merci d'avoir Voté !",
+    "thank_you_description": "Votre soutien signifie tout pour nous! Voici votre récompense :",
+    "new_cat_received": "🐱 Nouveau Chat Reçu",
+    "whats_next": "🎉 Et Maintenant ?",
+    "whats_next_description": "Utilisez `/chat` pour rencontrer plus d'amis poilus !\nConsultez votre `/galerie` pour voir votre collection !",
+    "footer_text": "Merci de soutenir MiauDex ! 💖",
+    "vote_again_button": "Votez à nouveau dans 12h",
+    "official_server_button": "Visitez le Serveur Officiel 🐾"
   },
   "trade": {
     "proposal_title": "🔥 Proposition d'Échange",
