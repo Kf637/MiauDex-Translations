@@ -245,7 +245,7 @@
     "reminder_disabled_title": "❌ Przypomnienia wyłączone!",
     "reminder_disabled_desc": "❌ Przypomnienia wyłączone. Możesz je włączyć w każdej chwili.",
     "dm_error_title": "❌ Nie można włączyć przypomnień głosowania",
-    "dm_error_desc": "🔔 Ups! Nie możemy wysłać Ci powiadomień DM.\n\n➡ **Aby włączyć przypomnienia o głosowaniu:**\n✅ Przejdź do **Ustawień użytkownika** (ikona koła zębatego)\n✅ Przejdź do **Prywatność i bezpieczeństwo**\n✅ Włącz **Zezwalaj na wiadomości prywatne od członków serwera**\n✅ Lub dodaj MiauDex do znajomych\n\n✨ **Dlaczego DM?**\n💖 Unikaj spamu na serwerze\n🚀 Natychmiastowe powiadomienia\n💎 Spersonalizowane doświadczenie!",
+    "dm_error_desc": "🔔 Ups! Nie możemy wysłać Ci powiadomień DM.\n\n➡ **Aby włączyć przypomnienia o głosowaniu:**\n✅ Przejdź do **Ustawień użytkownika** (ikona koła zębatego)\n✅ Przejdź do **Prywatność i bezpieczeństwo**\n✅ Włącz **Zezwalaj na wiadomości prywatne od członków serwera**\n\n✨ **Dlaczego DM?**\n💖 Unikaj spamu na serwerze\n🚀 Natychmiastowe powiadomienia\n💎 Spersonalizowane doświadczenie!",
     "dm_error_footer": "💡 Gdy naprawisz ustawienia DM, spróbuj ponownie włączyć przypomnienia!",
     "rank_legend": "LEGENDA GŁOSÓW",
     "rank_master": "MISTRZ GŁOSÓW",
@@ -340,7 +340,7 @@
     "drop_info_value": "**Szansa:** {{chance}}\n**Proporcje:** 1 na {{odds}}\n**Trudność:** {{difficulty}}",
     "availability": "📊 Dostępność",
     "availability_value": "**Wszystkie Koty:** {{count}}\n**% Bazy Danych:** {{percentage}}%\n**Ranking:** #{{rank}} z {{total}}",
-    "collection_tip": "🪄 Porada Kolekcjonerska",
+    "collection_tip": "Porada Kolekcjonerska",
     "tips": {
       "easy": "💖 **Łatwe do zebrania!** Głosuj regularnie aby budować kolekcję.",
       "moderate": "🎯 **Umiarkowane wyzwanie.** Codzienne głosowanie da ci je z czasem.",
