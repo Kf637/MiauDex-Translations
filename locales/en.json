@@ -245,7 +245,7 @@
     "reminder_disabled_title": "❌ Reminders Disabled!",
     "reminder_disabled_desc": "❌ Reminders disabled. You can re-enable anytime.",
     "dm_error_title": "❌ Cannot Enable Vote Reminders",
-    "dm_error_desc": "🔔 Oops! We can't send you DM notifications.\n\n➡ **To enable vote reminders:**\n✅ Go to **User Settings** (gear icon)\n✅ Navigate to **Privacy & Safety**\n✅ Enable **Allow DMs from server members**\n\n✨ **Why DMs?**\n💖 Avoid spam in the server\n🚀 Instant notifications\n💎 Personalized experience!",
+    "dm_error_desc": "🔔 Oops! We can't send you DM notifications.\n\n➡ **To enable vote reminders:**\n✅ Go to **User Settings** (gear icon)\n✅ Navigate to **Privacy & Safety**\n✅ Enable **Allow DMs from server members**\n✅ Or add MiauDex as a friend\n\n✨ **Why DMs?**\n💖 Avoid spam in the server\n🚀 Instant notifications\n💎 Personalized experience!",
     "dm_error_footer": "💡 Once you fix your DM settings, try enabling reminders again!",
     "rank_legend": "VOTE LEGEND",
     "rank_master": "VOTE MASTER",
@@ -333,14 +333,14 @@
     "common_rare": "📖 Common to Rare",
     "epic_legendary": "⭐ Epic to Legendary",
     "ultra_rare": "👑 Ultra Rare",
-    "footer": "Rarity affects embed color • Use dropdown to explore individual rarities",
+    "footer": "🪄 Rarity affects embed color • Use dropdown to explore individual rarities",
     "details_title": "{{emoji}} {{name}} Rarity",
     "details_description": "✨ **\"{{description}}\"**",
     "drop_info": "🎲 Drop Information",
     "drop_info_value": "**Chance:** {{chance}}\n**Odds:** 1 in {{odds}}\n**Difficulty:** {{difficulty}}",
     "availability": "📊 Availability",
     "availability_value": "**Total Cats:** {{count}}\n**Database %:** {{percentage}}%\n**Rank:** #{{rank}} of {{total}}",
-    "collection_tip": "Collection Tip",
+    "collection_tip": "🪄 Collection Tip",
     "tips": {
       "easy": "💖 **Easy to collect!** Vote regularly to build up your collection.",
       "moderate": "🎯 **Moderate challenge.** Daily voting will get you these over time.",
@@ -652,11 +652,11 @@
       "footer": "Gallery Statistics • Live Data"
     },
     "labels": {
-      "type": "Typ",
-      "rarity": "Rzadkość",
-      "total_cats": "Łącznie Kotów",
-      "completion": "Progres",
-      "enter_cat_number": "Wprowadź numer kota (1 - {{max}})"
+      "type": "Type",
+      "rarity": "Rarity",
+      "total_cats": "Total Cats",
+      "completion": "Completion",
+      "enter_cat_number": "Enter cat number (1 - {{max}})"
     },
     "jump_modal": {
       "label": "Enter cat number (1 - {{max}})",
