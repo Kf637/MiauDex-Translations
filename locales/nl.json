@@ -1,0 +1,696 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Kat Verzamel Cooldown",
+      "description": "Je moet **{{time}}** wachten voordat je nog een kat kan verzamelen.",
+      "tip": "💡 *Tip: Gebruik `/galerij` om tijdens het wachten je huidige verzameling te bekijken!*",
+      "footer": "Cooldowns dienen om katten speciaal en eerlijk te houden voor iedereen!"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Gefeliciteerd, {{username}}!",
+      "collected": "🐱 **{{cat_name}}** heeft zich bij je verzameling aangesloten!",
+      "rarity": "✨ Zeldzaamheid: **{{rarity_name}}** ({{chance}} dropkans)",
+      "streak": "{{streak_emoji}} **Dagelijkse Reeks:** {{streak}} dagen",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Volgende kat beschikbaar over 24 uur • Beste reeks: {{best_streak}} dagen"
+    },
+    "errors": {
+      "invalid_name_title": "Ongeldige Kat Naam",
+      "invalid_name": "Kat namen moeten 1-32 tekens lang zijn en enkel geldige tekens bevatten.\n\n❌ **Niet toegestaan:** `<>@#&` en lege namen\n✅ **Toegestaan:** Letters, cijfers, spaties en de meeste symbolen",
+      "reserved_pattern_title": "Gereserveerd Naam Patroon!",
+      "reserved_pattern": "⚠️ Namen zoals \"cat1\", \"cat30\", etc. zijn gereserveerd door het systeem.\n\n🐱 **Patroon geblokkeerd:** \"cat\" gevolgd door cijfers\n✨ Je kat verdient een iets creatievere en persoonlijkere naam!",
+      "creative_alternatives": "🎨 **Creatieve Alternatieven:**",
+      "examples": "• **Whiskers** - Klassiek en schattig\n• **Shadow** - Mysterieus en cool\n• **Mittens** - Schattig en gezellig\n• **Luna** - Hemels en mooi\n• **Ziggy** - Speels en uniek",
+      "creativity_tip": "💡 *Of laat het systeem een unieke naam voor je genereren!*",
+      "footer_creativity": "Laat je creativiteit stralen! ✨",
+      "api_failed_title": "Kat Zoeken Mislukt",
+      "api_failed": "Kan geen verbinding maken met de kat afbeelding service. Dit is meestal een tijdelijk probleem.\n\n🔧 **Mogelijke oorzaken:**\n• Netwerk verbindings problemen\n• Kat API onderhoud\n• Tijdelijke overbelasting van de server",
+      "save_failed_title": "Opslaan Mislukt",
+      "save_failed": "Je kat werd gevonden maar kon niet opgeslagen worden in je verzameling. Probeer alsjeblieft opnieuw.\n\nAls dit aanhoudt, is de database mogelijk tijdelijk niet beschikbaar."
+    },
+    "streak": {
+      "new_record": "🏆 **Nieuw persoonlijk record!**",
+      "legendary": "🌟 **Legendarische toewijding!**",
+      "on_fire": "🔥 **Je bent in topvorm!**",
+      "great_consistency": "⚡ **Geweldige consistentie!**",
+      "building_momentum": "🐱 **Momentum opbouwen!**"
+    },
+    "command": {
+      "option_name": "naam",
+      "option_name_desc": "Geef je nieuwe kat een naam naar jouw keuze (1–32 karakters, optioneel)"
+    }
+  },
+  "profile": {
+    "title": "👑 {{username}} Profiel Dashboard",
+    "subtitle": "*Welkom bij je gepersonaliseerde controlecentrum*",
+    "information": "✨ Profiel Informatie",
+    "user": "Gebruiker",
+    "member_since": "▶️ **Lid sinds:** {{date}}",
+    "streak": {
+      "title": "🐱 Kat Verzamel Reeks",
+      "current": "{{emoji}} **Huidige Reeks:** {{streak}} dagen",
+      "best": "🏆 **Beste Reeks:** {{best}} dagen",
+      "messages": {
+        "start": "*Start je reeks door een kat te verzamelen!*",
+        "amazing": "*Geweldige toewijding! 🌟*",
+        "fire": "*Je bent niet te stoppen! 🔥*",
+        "consistency": "*Geweldige consistentie! ⚡*",
+        "momentum": "*Ga zo door! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Huidige Instellingen",
+      "leaderboard": "Leaderboard Zichtbaarheid",
+      "trading": "Ruilen Ingeschakeld",
+      "reminders": "Kat Herinneringen",
+      "enabled": "ingeschakeld",
+      "disabled": "uitgeschakeld"
+    },
+    "premium": {
+      "status": "✨ Premium Status",
+      "member": "✅ **Premium Lid**",
+      "notifications": "📱 Geavanceerde Meldingen",
+      "support": "⭐ Prioriteits Ondersteuning"
+    },
+    "buttons": {
+      "refresh": "Vernieuwen",
+      "help": "Hulp"
+    },
+    "help": {
+      "title": "⚙️ Profiel Instellingen Hulp",
+      "description": "Dit is wat elke instelling doet:",
+      "leaderboard": "Regelt of je verschijnt op server leaderboards en rangschikkingen",
+      "trading": "Staat andere gebruikers toe om je ruil verzoeken te sturen",
+      "reminders": "Stuurt je gepersonaliseerde meldingen over katten en activiteiten",
+      "footer": "Hulp • Profiel Dashboard"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Alleen Premium",
+      "enabled": "ingeschakeld",
+      "disabled": "uitgeschakeld",
+      "loading": "Laden...",
+      "success": "Succes!",
+      "error": "Error!"
+    },
+    "footer": {
+      "standard": "Standaard Ervaring • Gebruik de knoppen om aan te passen",
+      "premium": "Premium Ervaring • Gebruik de knoppen om aan te passen",
+      "session_expired": "Sessie verlopen - gebruik `/profiel` om een nieuwe te starten"
+    },
+    "premium_required": {
+      "title": "👑 Premium Functie",
+      "description": "**Kat Herinneringen** zijn alleen beschikbaar voor Premium leden!\n\n✨ **Wat je krijgt met Premium:**\n📱 Slimme kat meldingen\n💎 Geavanceerde profiel functies\n👑 VIP Status\n\n*Klaar om te upgraden? Neem contact op met je server beheerder!*",
+      "footer": "Premium • Verbeterde Discord Ervaring"
+    },
+    "errors": {
+      "generic": "Oeps! Er ging iets mis. Probeer het opnieuw."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "Dit commando kan enkel op een server gebruikt worden!",
+    "title": "🏰 {{server_name}} Server Info",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Welkom op {{server_name}}! Een levendige community server.",
+    "members": "👥 Leden",
+    "members_value": "**Totaal:** {{total}}\n**Mensen:** {{humans}}\n**Bots:** {{bots}}",
+    "boosts": "{{boost_emoji}} Server Boosts",
+    "boosts_value": "**Level:** {{level}}\n**Boosts:** {{count}}",
+    "timeline": "📅 Tijdlijn",
+    "timeline_value": "**Gemaakt:** <t:{{created}}:R>\n**Je bent toegetreden:** <t:{{joined}}:R>",
+    "footer": "Server ID: {{id}} • Aangevraagd door {{username}}",
+    "level_mega": "🌟 MEGA SERVER",
+    "level_large": "🏆 GROTE SERVER",
+    "level_big": "🚀 GROTE SERVER",
+    "level_medium": "💎 MEDIUM SERVER",
+    "level_growing": "✨ GROEIENDE SERVER",
+    "level_small": "🌱 KLEINE SERVER",
+    "join_miaudex": "💖 Word lid van MiauDex",
+    "leave_review": "⭐ Laat een Beoordeling Achter",
+    "vote_bot": "🚀 Stem op de Bot"
+  },
+  "stats": {
+    "title": "📈 MiauDex Statistieken Dashboard",
+    "subtitle": "**Real-time inzichten in het kat verzamel universum!**",
+    "status": "🚀 **Status:** Alle systemen operationeel",
+    "performance": "⚡ **Prestaties:** {{status}}",
+    "scale": "🛡️ **Schaal:** {{tier}}",
+    "network": "🌍 Netwerk Bereik",
+    "network_value": "**Servers:** {{servers}}\n**Totaal Gebruikers:** {{users}}\n**Gem. Gebruikers/Server:** {{avg_users}}",
+    "collection": "🐱 Verzamel Statistieken",
+    "collection_value": "**Totaal Aantal Katten:** {{cats}}\n**Gem. Katten/Gebruiker:** {{avg_cats}}\n**Verzamel Ratio:** {{rate}}",
+    "health": "⏱️ Systeem Gezondheid",
+    "health_value": "**Uptime:** {{uptime}}\n**Ping:** {{ping}}\n**Status:** {{status}}",
+    "footer": "💡 Klik de onderstaande knoppen voor gedetailleerde inzichten • Laatst bijgewerkt",
+    "community_title": "💖 Gemeenschaps Inzichten",
+    "community_subtitle": "**Vieren van onze geweldige kat verzamel gemeenschap!**",
+    "community_size": "👥 Grootte Van Onze Community",
+    "community_size_value": "**Totaal Aantal Verzamelaars:** {{collectors}}\n**Dagelijks Actief:** ~{{active}}\n**Wekelijkse Groei:** +{{growth}}%",
+    "milestones": "🐱 Verzamel Mijlpalen",
+    "milestones_value": "**Totaal Aantal Verzamelde Katten:** {{total}}\n**Gemiddelde per Gebruiker:** {{average}} katten\n**Zeldzaamste Verzamelingen:** {{rarest}}+ katten",
+    "achievements": "🏆 Prestaties",
+    "achievements_value": "**Top Verzamelaar:** {{top}} katten\n**Actieve Guilds:** {{guilds}}\n**Globale Rangschikking:** Actief",
+    "community_footer": "🌟 Bedankt dat je deel uitmaakt van onze gemeenschap!",
+    "error_title": "⚙️ Statistieken Zijn Tijdelijk Niet Beschikbaar",
+    "error_description": "Kan statistieken nu niet ophalen. Probeer het later opnieuw!",
+    "error_footer": "🔧 Ons team is op de hoogte gesteld van het probleem",
+    "status_legendary": "LEGENDARISCH",
+    "status_excellent": "UITSTEKEND",
+    "status_great": "GEWELDIG",
+    "status_good": "GOED",
+    "status_fresh": "VERS",
+    "tier_massive": "MASSIEF",
+    "tier_huge": "ENORM",
+    "tier_large": "GROOT",
+    "tier_growing": "GROEIEND",
+    "tier_small": "KLEIN",
+    "rate_high": "Hoog",
+    "rate_medium": "Medium",
+    "rate_growing": "Groeiend",
+    "conn_excellent": "Uitstekend",
+    "conn_good": "Goed",
+    "conn_fair": "Redelijk",
+    "calculating": "Berekenen...",
+    "community_button": "Gemeenschap",
+    "refresh_button": "Vernieuwen",
+    "support_button": "Ondersteuning",
+    "back_to_main": "Teruggaan"
+  },
+  "leaderboard": {
+    "title": "🏆 Kat Leaderboard",
+    "subtitle": "**De meest legendarische kat verzamelaars!**",
+    "legends": "👑 Hall of Fame",
+    "rising": "⭐ Opkomende Verzamelaars",
+    "your_rank": "🐾 Jouw Rang",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** katten {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Blijf verzamelen om hoger te klimmen! • Elk moment bijgewerkt",
+    "empty_title": "🐱 ✨ Kat Ranglijst ✨",
+    "empty_description": "🐾 **De ranglijst is leeg!**\n\n🚀 Wees de eerste legendarische kat verzamelaar!\n🔮 Begin met katten verzamelen en claim je troon!",
+    "empty_footer": "🐾 Begin je verzamel avontuur vandaag!",
+    "error_title": "❌ Oeps! Er ging iets mis",
+    "error_description": "🐾 Kan de ranglijst nu niet ophalen. Probeer later opnieuw!",
+    "error_footer": "🐾 Error werd gelogd voor debugging",
+    "refresh_button": "🔄 Vernieuwen",
+    "my_stats_button": "📊 Mijn Statistieken",
+    "stats_title": "💎 Verzamel Statistieken van {{username}}",
+    "stats_description": "**Jouw katten verzamel avontuur**",
+    "stats_ranking": "🏆 Rangschikking",
+    "stats_ranking_value": "**Rang:** #{{rank}}\n**Katten:** {{cats}}\n**Status:** {{status}}",
+    "stats_no_data": "Je bent nog niet begonnen met verzamelen!",
+    "stats_progress": "⭐ Voortgang",
+    "stats_progress_value": "**Volgende Mijlpaal:** {{next}}\n**Voortgang:** {{progress}} `{{current}}/100`\n**Efficiëntie:** {{efficiency}}",
+    "stats_progress_no_data": "Begin met verzamelen om je voortgang te zien!",
+    "stats_max_level": "MAX LEVEL!",
+    "stats_efficiency_legendary": "Legendarisch",
+    "stats_efficiency_expert": "Expert",
+    "stats_efficiency_good": "Goed",
+    "stats_efficiency_starting": "Beginnend",
+    "stats_footer": "Blijf verzamelen om hoger te klimmen! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Stem op MiauDex!",
+    "subtitle": "✨ Ondersteun de bot en krijg beloningen!",
+    "description": "Stem elke 12 uur om katten te verdienen en prestaties vrij te spelen!",
+    "footer": "Volgende stem: {{next}}",
+    "reminder_status": "📱 Herinnering Status",
+    "reminder_enabled": "✅ Herinneringen Ingeschakeld",
+    "reminder_disabled": "❌ Herinneringen Uitgeschakeld",
+    "voting_stats": "📊 Stem Statistieken",
+    "voting_stats_value": "**Totaal Stemmen:** {{votes}}\n**Status:** {{status}}\n**Voortgang:** {{progress}}",
+    "vote_rewards": "🎁 Stem Beloningen",
+    "vote_rewards_value": "Verdien katten en speciale beloningen door te stemmen!",
+    "enable_reminders": "📱 Herinneringen Inschakelen",
+    "disable_reminders": "📵 Herinneringen Uitschakelen",
+    "view_leaderboard": "🏆 Bekijk Leaderboard",
+    "vote_now": "🚀 Stem Nu",
+    "view_stats": "📈 Bekijk Statistieken",
+    "time_remaining": "Resterende tijd: {{time}}",
+    "ready_to_vote": "Je kunt nu stemmen!",
+    "leaderboard_title": "🏆 Stem Leaderboard",
+    "leaderboard_subtitle": "Bekijk de top stemmers!",
+    "voting_legends": "Top 3 Legendes",
+    "rising_voters": "Opkomende Stemmers",
+    "no_legends": "Nog geen legendes!",
+    "your_rank": "Jouw Rang",
+    "your_rank_value": "{{emoji}} Positie: {{position}} • Stemmen: {{votes}}\nVoortgang: {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Leaderboard bijgewerkt",
+    "leaderboard_error_title": "❌ Fout bij Laden Leaderboard",
+    "leaderboard_error_desc": "Er ging iets mis bij het ophalen van de leaderboard.",
+    "leaderboard_error_footer": "Probeer het later opnieuw.",
+    "unknown_user": "Onbekende Gebruiker",
+    "votes": "stemmen",
+    "reminder_enabled_title": "✅ Herinneringen Ingeschakeld!",
+    "reminder_enabled_desc": "📱 Perfect! Stem herinneringen zijn nu actief!\n\n➡ Je krijgt een DM wanneer je opnieuw kan stemmen.\n🚀 Elke herinnering een bevat directe link om te stemmen.\n💖 Mis nooit een stem en verdien meer katten!\n\n✅ Test bericht succesvol verzonden - Check je DMs!",
+    "reminder_enabled_footer": "Test bericht succesvol verzonden - Check je DMs!",
+    "reminder_disabled_title": "❌ Herinneringen Uitgeschakeld!",
+    "reminder_disabled_desc": "❌ Herinneringen uitgeschakeld. Je kunt ze altijd opnieuw inschakelen.",
+    "dm_error_title": "❌ Stem Herinneringen Kon Niet Worden Ingeschakeld",
+    "dm_error_desc": "📱 Oeps! We kunnen je geen DM meldingen sturen.\n\n➡ **Om stem herinneringen in te schakelen:**\n✅ Ga naar **Gebruikers Instellingen** (tandwiel icoon)\n✅ Navigeer naar **Privacy & Veiligheid**\n✅ Schakel **Sta DMs toe van server leden** in\n\n✨ **Waarom DMs?**\n💖 Vermijd spam in de server\n🚀 Instant meldingen\n💎 Gepersonaliseerde ervaring!",
+    "dm_error_footer": "💡 Wanneer je je DM instellingen hebt gerepareerd, probeer herinneringen weer in te schakelen!",
+    "rank_legend": "STEM LEGENDE",
+    "rank_master": "STEM MEESTER",
+    "rank_expert": "STEM EXPERT",
+    "rank_ace": "STEM AAS",
+    "rank_pro": "STEM PRO",
+    "rank_voter": "STEMMER",
+    "streak_legendary": "LEGENDARISCH",
+    "streak_champion": "KAMPIOEN",
+    "streak_on_fire": "ONSTOPBAAR",
+    "streak_rising_star": "RIJZENDE STER",
+    "streak_getting_started": "BEGINNEND",
+    "streak_newcomer": "NIEUWKOMER",
+    "not_your_panel": "❌ Dit is het stem paneel van {{username}} !",
+    "settings_updated": "Instellingen succesvol bijgewerkt!",
+    "reminder_success_title": "✅ Herinneringen Succesvol Ingeschakeld!",
+    "reminder_success_desc": "📱 Perfect! Stem herinneringen zijn nu actief!\n\n✨ **Wat gebeurt er nu?**\n➡ Je ontvangt een DM herinnering wanneer je weer kunt stemmen\n🚀 Elke herinnering een bevat directe link om te stemmen\n💖 Mis nooit een stem en verdien meer katten!\n\n✅ **Test bericht succesvol verzonden** - Check je DMs!",
+    "all_set_footer": "📱 Je bent helemaal klaar! Veel plezier met stemmen!",
+    "user_stats_title": "🏆 Stem Statistieken van {{username}}",
+    "stats_subtitle": "✨ Gedetailleerde opsplitsing van je stem avontuur",
+    "overall_stats": "⭐ Algemene Statistieken",
+    "overall_stats_value": "**Totaal Aantal Stemmen:** {{votes}}\n**Huidige Reeks:** {{streak}}\n**Rang:** {{rank}}",
+    "cats_earned": "🐱 Verdiende Katten",
+    "cats_earned_value": "**Van Stemmen:** {{cats}}",
+    "reminder_info": "📱 Herinnering Info",
+    "reminder_info_value": "**Status:** {{status}}\n**Volgende Stem:** {{nextVote}}\n**Efficiëntie:** {{efficiency}}",
+    "status_active": "✅ Actief",
+    "status_disabled": "❌ Uitgeschakeld",
+    "keep_voting_footer": "Blijf stemmen om meer prestaties vrij te spelen! • {{date}}",
+    "rank_master_voter": "Meester Stemmer",
+    "rank_expert_voter": "Expert Stemmer",
+    "rank_active_voter": "Actieve Stemmer",
+    "rank_new_voter": "Nieuwe Stemmer",
+    "efficiency_excellent": "Uitstekend",
+    "efficiency_good": "Goed",
+    "efficiency_starting": "Beginnend",
+    "thank_you_title": "🗳️ Bedankt voor het Stemmen!",
+    "thank_you_description": "Jouw steun is voor ons super waardevol! Hier is je beloning:",
+    "new_cat_received": "🐱 Nieuwe Kat Ontvangen",
+    "whats_next": "🎉 Wat Nu?",
+    "whats_next_description": "Gebruik `/kat` om meer gepelste vrienden te ontmoeten!\nBekijk je `/galerij` om je collectie te zien!",
+    "footer_text": "Bedankt je steun van MiauDex! 💖",
+    "vote_again_button": "Stem opnieuw over 12u",
+    "official_server_button": "Bezoek Onze Officiële Server 🐾"
+  },
+  "trade": {
+    "proposal_title": "🔥 Ruil Voorstel",
+    "completed_title": "🤝 Ruil Voltooid!",
+    "rejected_title": "❌ Ruil Afgewezen",
+    "cancelled_title": "⏰ Ruil Geannuleerd",
+    "proposal_description": "{{target}}, {{username}} wil met je ruilen!\n\n⏳ **Kies je antwoord hieronder**\n⏰ Je hebt {{time}} seconden om te beslissen",
+    "success_description": "✅ **Ruil succesvol!**\nBeide katten zijn overgedragen naar hun nieuwe eigenaren.",
+    "rejected_description": "{{username}} wees het ruilvoorstel af.",
+    "cancelled_description": "Geen antwoord ontvangen binnen de tijdslimiet.",
+    "offering": "{{emoji}} {{username}} biedt het volgende aan:",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "Als bot kan je niet ruilen",
+      "invalid_target": "Je kan niet ruilen met bots",
+      "self_trade": "Je kunt niet ruilen met jezelf! 🤔\n\nProbeer een andere gebruiker te vinden om mee te ruilen.",
+      "invalid_cat_name": "Kat namen moeten 1-{{max}} karakters lang zijn en geldige tekens bevatten.",
+      "settings_check_failed": "Kon de ruil instellingen van {{username}} niet verifiëren. Mogelijk moet deze gebruiker eerst de bot gebruiken.",
+      "trades_disabled": "{{username}} heeft ruilen uitgeschakeld.\n\nDit kan terug ingeschakeld worden via: `/profiel`",
+      "cat_not_found": "Je hebt geen kat die \"{{name}}\" heet.\n\nGebruik `/galerij` om je beschikbare katten te bekijken.",
+      "target_cat_not_found": "{{username}} heeft geen kat die \"{{name}}\" heet.\n\nJe kan hun verzameling bekijken met `/galerij`",
+      "rarity_mismatch": "Katten moeten dezelfde zeldzaamheid hebben om te ruilen!\n\n{{my_emoji}} Jouw kat: **{{my_rarity}}**\n{{their_emoji}} Hun kat: **{{their_rarity}}**\n\n*Dit houdt ruilen eerlijk voor iedereen.*",
+      "lookup_failed": "We konden de kat niet vinden in onze database. Probeer later opnieuw.",
+      "trade_failed": "Er trad een fout op bij het overdragen van de katten. De ruil is geannuleerd.\n\nBeide katten blijven bij hun oorspronkelijke eigenaars.",
+      "unexpected_error": "Er gebeurde iets onverwachts bij het verwerken van je ruil.\n\nProbeer het over een paar momenten opnieuw."
+    },
+    "command": {
+      "option_user": "gebruiker",
+      "option_user_desc": "De gebruiker waarmee je wil ruilen",
+      "option_yourcat": "jouw-kat",
+      "option_yourcat_desc": "De naam van jouw kat die je wil ruilen",
+      "option_theircat": "hun-kat",
+      "option_theircat_desc": "De naam van de kat die je wil ontvangen"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Kat Zeldzaamheden 🐱 ✨",
+    "subtitle": "🌌 **Welkom in de magische wereld van kat zeldzaamheden!**",
+    "description": "ℹ️ Elke kat heeft een unieke zeldzaamheid die bepaald welke kleur die heeft en hoe speciaal hij is.\n🎲 Hoe zeldzamer de kat, hoe moeilijker hij te vinden is!",
+    "total_cats": "📊 **Totaal Aantal Beschikbare Katten:** {{count}}",
+    "common_rare": "📖 Common tot Rare",
+    "epic_legendary": "⭐ Epic tot Legendary",
+    "ultra_rare": "👑 Ultra Rare",
+    "footer": "🪄 Zeldzaamheid beïnvloedt de embed kleur • Gebruik de dropdown om de zeldzaamheden te verkennen",
+    "details_title": "{{emoji}} {{name}} Zeldzaamheid",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Drop Informatie",
+    "drop_info_value": "**Kans:** {{chance}}\n**Waarschijnlijkheid:** 1 op {{odds}}\n**Moeilijkheid:** {{difficulty}}",
+    "availability": "📊 Beschikbaarheid",
+    "availability_value": "**Totaal Aantal Katten:** {{count}}\n**Database %:** {{percentage}}%\n**Rang:** #{{rank}} van {{total}}",
+    "collection_tip": "🪄 Verzamel Tip",
+    "tips": {
+      "easy": "💖 **Makkelijk te verzamelen!** Stem regelmatig om je verzameling op te bouwen.",
+      "moderate": "🎯 **Gematigde uitdaging.** Dagelijks stemmen geeft je deze na verloop van tijd.",
+      "serious": "🔥 **Serieuze toewijding vereist.** Consistent stemmen is de sleutel!",
+      "ultra_rare": "👑 **Ultra zeldzaam!** Deze vereisen ongelooflijk geduld en geluk.",
+      "legendary": "🌌 **Legendarische status!** Het absolute zeldzaamste - prijzen voor de ECHTE verzamelaars!"
+    },
+    "details_footer": "Onderdeel van het MiauDex zeldzaamheid systeem • Selecteer een andere zeldzaamheid om meer te verkennen!",
+    "select_placeholder": "🔍 Selecteer een zeldzaamheid om meer te leren..."
+  },
+  "help": {
+    "main": {
+      "title": "MiauDex Commando Centrum",
+      "description": "**Welkom bij de ultieme kat verzamel ervaring!**\n\n{{sparkles}} **{{totalCommands}} commando's** beschikbaar om je avontuur en ervaring te verbeteren\n{{cat}} Verzamel zeldzame katten, concurreer met vrienden, en word een legende!\n\n**Kies een categorie hieronder om de commando's te verkennen:**",
+      "footer": "💡 Pro tip: Gebruik het dropdown menu om specifieke categorieën te verkennen!"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Verzameling",
+        "description": "Beheer en bekijk je kat verzameling"
+      },
+      "social": {
+        "name": "👥 Sociaal & Competitie",
+        "description": "Concurreer en interacteer met andere verzamelaars"
+      },
+      "rewards": {
+        "name": "🎁 Beloningen & Stemmen",
+        "description": "Krijg beloningen en steun de bot"
+      },
+      "utility": {
+        "name": "⚙️ Hulpmiddelen & Instellingen",
+        "description": "Bot instellingen en nuttige tools"
+      }
+    },
+    "commands_count": "commando's",
+    "category": {
+      "commands": "Commando's",
+      "count": "**{{count}} commando's** in deze categorie:",
+      "no_commands": "Geen commando's gevonden in deze categorie.",
+      "footer": "🔍 Gebruik het menu om andere categorieën te verkennen • {{count}} commando's getoond"
+    },
+    "quickstart": {
+      "title": "Snelstart Gids",
+      "subtitle": "**Nieuw bij MiauDex? Begin je legendarische avontuur hier!**",
+      "step1": {
+        "title": "Stap 1: Krijg Je Eerste Kat",
+        "description": "Gebruik `/kat` om gratis een willekeurige kat te krijgen!"
+      },
+      "step2": {
+        "title": "Stap 2: Controleer Je Verzameling",
+        "description": "Gebruik `/galerij` om al je verzamelde katten en zeldzaamheden te bekijken."
+      },
+      "step3": {
+        "title": "Stap 3: Klim de Leaderboards",
+        "description": "Gebruik `/top` om te zien waar je staat tussen andere verzamelaars."
+      },
+      "step4": {
+        "title": "Stap 4: Pas Je Ervaring Aan",
+        "description": "Gebruik `/profiel` om je instellingen en voorkeuren te beheren."
+      },
+      "tips": {
+        "title": "Pro Tips",
+        "content": "• Stem elke 12 uur voor consistente beloningen\n• Zeldzame katten zijn waardevoller voor rangschikkingen\n• Word lid van onze gemeenschap voor exclusieve evenementen!"
+      },
+      "footer": "🎯 Klaar om een legendarische verzamelaar te worden?"
+    },
+    "menu": {
+      "placeholder": "🔍 Kies een commando categorie om te verkennen..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Snelstart",
+      "support": "💖 Ondersteun Ons",
+      "refresh": "🔄 Vernieuwen"
+    },
+    "error": {
+      "title": "Oeps! Er ging iets mis",
+      "description": "Kan het hulp menu nu niet laden. Probeer het later opnieuw!",
+      "footer": "🐾 De fout werd gelogd voor debugging"
+    },
+    "command_descriptions": {
+      "cat": "Ontdek een nieuwe kat om aan je collectie toe te voegen!",
+      "gallery": "Bekijk jouw gallerij, of die van iemand anders",
+      "rename": "Geef je geliefde kat een gloednieuwe naam!",
+      "top": "Toon het kat leaderboard",
+      "profile": "Toon en beheer je profielsinstellingen",
+      "stats": "Toon bot statistieken",
+      "vote": "Stem op de bot om beloningen te krijgen",
+      "announcement": "Bekijk de laatste MiauDex updates en mededelingen",
+      "invite": "Word lid van de officiële MiauDex server voor exclusieve perks!",
+      "serverinfo": "Toon informatie over de server",
+      "rarity": "Toon alle kat zeldzaamheden en hun kansen",
+      "help": "Verken alle MiauDex commandp's en features",
+      "trade": "Ruil katten met andere gebruikers"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Word Lid van de MiauDex Community!",
+      "description": "{{rainbow}} **Welkom in het ultieme kat verzamelaar paradijs!**\n\n{{community}} Verbind met andere kat liefhebbers\n{{support}} Krijg snelle ondersteuning van ons geweldige team\n{{gift}} Neem deel aan exclusieve evenementen en weggeefacties\n{{news}} Blijf op de hoogte van de nieuwste MiauDex functies\n\n{{arrow}} [**Klik hier om deel te nemen aan het avontuur!**]({{invite_link}})\n{{bot}} [**Voeg MiauDex toe aan je server!**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "Wat Vind Je Hier?",
+        "content": "{{chat}} **Actieve Gemeenschap** - Chat met kat liefhebbers wereldwijd\n{{trophy}} **Ranglijsten** - Zie wie de top verzamelaar is\n{{bell}} **Aankondigingen** - Blijf op de hoogte van elke update\n{{target}} **Evenementen** - Speciale wedstrijden en uitdagingen"
+      },
+      "exclusive_perks": {
+        "title": "Exclusieve Voordelen",
+        "content": "{{gift}} **Dagelijkse Weggeefacties** - Gratis katten elke dag\n{{gem}} **VIP Kanalen** - Premium lid voordelen"
+      },
+      "footer": "{{heart}} Word lid van {{users}}+ geregistreerde verzamelaars in onze groeiende gemeenschap!"
+    },
+    "giveaway": {
+      "title": "Dagelijkse Kat Weggeefacties",
+      "description": "{{tada}} **Elke dag wint één gelukkig lid een GRATIS kat!**\n\n{{lightning}} Snel om deel te nemen, spannend om te winnen, en volledig GRATIS!\n\n{{arrow}} **Enkel beschikbaar op de [MiauDex Server]({{invite_link}})!**",
+      "schedule": {
+        "title": "Schema",
+        "content": "{{bell}} **Dagelijks om 16:00 UTC**\n{{target}} Automatische meldingen voor leden"
+      },
+      "rewards": {
+        "title": "Beloningen",
+        "content": "{{cat}} **1 Willekeurige Kat**"
+      },
+      "how_to_enter": {
+        "title": "Hoe Deel Te Nemen",
+        "content": "{{check}} **Gewoon een reactie plaatsen!** Zo simpel is het\n{{tada}} Winnaars worden aangekondigd na 24 uur!"
+      },
+      "footer": "{{wink}} Mis je dagelijkse kans niet - word nu lid en begin met winnen!"
+    },
+    "features": {
+      "title": "Server Functies Showcase",
+      "description": "**Ontdek wat onze gemeenschap speciaal maakt:**",
+      "community_channels": {
+        "title": "Community Kanalen",
+        "content": "{{paw}} **#cat-center** - Toon je verzameling\n{{heart}} **#english-general** - Maak vrienden met andere verzamelaars\n{{target}} **#trading** - Ruil katten met andere leden"
+      },
+      "support_help": {
+        "title": "Ondersteuning & Hulp",
+        "content": "{{bell}} **#miaudex** - Laatste nieuws en updates\n{{check}} **#support** - Krijg hulp van ons team\n{{crystal}} **#suggestions** - Vorm de toekomst van de bot"
+      },
+      "vip_benefits": {
+        "title": "VIP Lid Voordelen",
+        "content": "{{gem}} **Exclusieve kanalen** met geavanceerde verzamelaars\n{{fire}} **Beta testen** toegang tot nieuwe functies\n{{rainbow}} **Speciale rol** met unieke voordelen en erkenning"
+      },
+      "footer": "{{globe}} Bouwen van 's werelds beste kat verzamel gemeenschap!"
+    },
+    "stats": {
+      "title": "Community Statistieken",
+      "description": "**Onze geweldige community in cijfers:**",
+      "registered_users": {
+        "title": "Geregistreerde Gebruikers",
+        "content": "**{{count}}** kat verzamelaars"
+      },
+      "total_cats": {
+        "title": "Totaal Verzamelde Katten",
+        "content": "**{{count}}** katten in verzamelingen"
+      },
+      "active_voters": {
+        "title": "Actieve Stemmers",
+        "content": "**{{count}}** dagelijkse deelnemers"
+      },
+      "total_votes": {
+        "title": "Totaal Uitgebrachte Stemmen",
+        "content": "**{{count}}** stemmen voor gratis katten"
+      },
+      "premium_members": {
+        "title": "Premium Leden",
+        "content": "**{{count}}** VIP verzamelaars"
+      },
+      "giveaway_participants": {
+        "title": "Deelnemers van de weggeefactie",
+        "content": "**{{count}}** actief in evenementen"
+      },
+      "leaderboard_competitors": {
+        "title": "Ranglijst Concurrenten",
+        "content": "**{{count}}** tonen hun verzameling"
+      },
+      "average_collection": {
+        "title": "Gemiddelde Verzameling Grootte",
+        "content": "**{{count}}** katten per gebruiker"
+      },
+      "engagement_rate": {
+        "title": "Betrokkenheids Ratio",
+        "content": "{{rate}}% dagelijkse activiteit"
+      },
+      "highlights": {
+        "title": "Echte Community Hoogtepunten",
+        "content": "{{heart}} **{{totalVotes}}** stemmen uitgebracht door onze geweldige gemeenschap\n{{sparkles}} **{{giveawayParticipants}}** leden nemen actief deel aan evenementen\n{{trophy}} **{{leaderboardUsers}}** trotse verzamelaars tonen hun prestaties"
+      },
+      "footer": "{{wink}} Dit zijn echte cijfers uit onze actuele community database!"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Word Lid van MiauDex Server",
+      "add_bot": "{{plus}} Voeg MiauDex Bot Toe",
+      "review": "{{star}} Laat een Beoordeling Achter",
+      "vote": "{{trophy}} Stem op MiauDex",
+      "features": "{{magic}} Server Functies",
+      "stats": "{{chart}} Community Statistieken"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Onverwachte Fout",
+    "unexpected": "Er gebeurde iets onverwachts tijdens het verzamelen van je kat.\n\nHet ontwikkelings team is op de hoogte gesteld. Probeer het over een paar minuten opnieuw.",
+    "unknown_command": "❌ Onbekend commando: `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "een mooie naam",
+    "invalid_name_title": "❌ Ongeldige Naam!",
+    "invalid_name_description": "⚠️ Er was een probleem met de naam \"{{name}}\".\n\n✨ Probeer een andere naam voor je kat!",
+    "choose_loving_name": "Kies een liefdevolle naam voor je behaarde vriend! 🐾",
+    "reserved_pattern_title": "❌ Gereserveerd Naam Patroon!",
+    "reserved_pattern_description": "⚠️ Namen zoals \"**{{name}}**\" zijn gereserveerd door het systeem.\n\n🐱 **Patroon geblokkeerd:** \"cat\" gevolgd door cijfers (zoals cat1, cat30, etc.)\n✨ Je kat verdient een creatievere en persoonlijkere naam!",
+    "creative_alternatives": "🎨 Creatieve Alternatieven",
+    "alternative_examples": "• **Whiskers**\n• **Schaduw**\n• **Mittens**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "Laat je creativiteit stralen! ✨",
+    "name_too_long_title": "⚠️ Naam Te Lang!",
+    "name_too_long_description": "😿 Je kat z'n naam \"{{name}}\" is **{{length}}** tekens lang.\n\n✏️ **Maximaal toegestaan:** 20 tekens\n✨ Probeer een kortere, schattigere naam!",
+    "suggestions": "🎨 Suggesties",
+    "choose_perfect_fit": "Kies een naam die perfect past! 🐾",
+    "invalid_characters_title": "❌ Ongeldige Tekens!",
+    "invalid_characters_description": "⚠️ De naam \"{{name}}\" bevat ongeldige tekens.\n\n✅ **Toegestane tekens:**\n• Letters (A-Z, a-z)\n• Cijfers (0-9)\n• Spaties, streepjes (-), underscores (_)\n\n❌ **Niet toegestaan:** Emoji's, speciale symbolen",
+    "valid_examples": "✨ Geldige Voorbeelden",
+    "valid_examples_content": "• **Pluizige Kat**\n• **Schaduw-2024**\n• **Mijn_Dierbare_Kat**",
+    "keep_simple_sweet": "Houd het simpel en lief! 💫",
+    "cat_not_found_title": "😿 Kat Niet Gevonden!",
+    "cat_not_found_description": "🐱 Ik kon geen kat genaamd \"**{{name}}**\" vinden in je verzameling.\n\n✨ **Controleer de spelling** en probeer opnieuw!",
+    "quick_tips": "🎨 Snelle Tips",
+    "quick_tips_content": "• Namen zijn **hoofdletter gevoelig**\n• Gebruik `/galerij` om al je katten te zien\n• Zorg ervoor dat je deze kat bezit",
+    "gallery_tip": "Tip: Gebruik /galerij om al je behaarde vrienden te zien! 🐾",
+    "name_taken_title": "❌ Naam Al Bezet!",
+    "name_taken_description": "🐱 Je hebt al een kat genaamd \"**{{name}}**\"!\n\n✨ Elke kat in je verzameling heeft een **unieke naam** nodig.",
+    "unique_name_footer": "Maak elke kat speciaal met een unieke naam! ✨",
+    "success_title": "🎉 Kat Succesvol Hernoemd! 🎉",
+    "success_description": "✨ **Gefeliciteerd!** Je kat z'n transformatie is voltooid!\n\n🐱 **\"{{oldName}}\"** heet nu trots **\"{{newName}}\"**!",
+    "cat_details": "{{emoji}} Kat Details",
+    "cat_details_content": "**Nieuwe Naam:** {{newName}}\n**Zeldzaamheid:** {{rarity}}\n**Eigenaar:** {{owner}}",
+    "fun_fact": "🎨 Leuk Feitje",
+    "fun_fact_content": "Wist je dat? Je kat zal dit speciale moment voor altijd onthouden! {{newName}} is nu klaar voor nieuwe avonturen! 💖",
+    "success_footer": "{{newName}} zegt \"Miauw!\" • Hernoemd door {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** went prachtig aan zijn nieuwe naam! 😻 Het lijkt erop dat hij het leuk vindt!",
+    "celebration_footer": "Je kat verzameling werd net nog specialer! 🌟",
+    "command": {
+      "option_old": "oude-naam",
+      "option_old_desc": "🔍 De huidige naam van je kat",
+      "option_new": "nieuwe-naam",
+      "option_new_desc": "✨ Een gloednieuwe naam voor je kat"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "galerij",
+      "description": "Bekijk jouw galerij, of die van iemand anders",
+      "option_user": "gebruiker",
+      "option_user_desc": "Gebruiker wiens galerij je wilt bekijken"
+    },
+    "empty": {
+      "title": "🔭 Lege Galerij",
+      "description": "**{{username}}** heeft nog geen katten verzameld!\n\n🐱 Begin met katten verzamelen om je galerij op te bouwen\n✨ Elke kat is uniek en speciaal\n📚 Bouw de ultieme verzameling!",
+      "footer": "Lege Galerij • Begin met verzamelen!"
+    },
+    "error": {
+      "title": "❌ Galerij Fout",
+      "description": "Er ging iets mis tijdens het laden van de galerij. Probeer het later opnieuw.",
+      "not_found": "❓ **Kat niet gevonden of beschadigde data**\n\nProbeer de galerij te vernieuwen of neem contact op met onze ondersteuning."
+    },
+    "embed": {
+      "title": "🖼️ Kat Galerij van {{username}}",
+      "collection_progress": "📚 **Verzamel Voortgang**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Zeldzaamheid Details",
+      "collection_stats": "💎 Verzamel Statistieken",
+      "footer": "💖 Kat {{current}} van {{total}} • {{username}} Galerij • Gebruik de knoppen om te navigeren"
+    },
+    "navigation": {
+      "previous": "Vorige",
+      "next": "Volgende",
+      "jump": "Spring"
+    },
+    "utility": {
+      "stats": "Statistieken",
+      "refresh": "Vernieuwen",
+      "help": "Hulp"
+    },
+    "help": {
+      "title": "🔍 Galerij Hulp & Commands",
+      "description": "Leer hoe je door je prachtige kat galerij navigeert!",
+      "navigation": "🎮 Navigatie Bediening",
+      "navigation_details": {
+        "first": "⏮️ Eerste - Spring naar eerste kat",
+        "previous": "⬅️ Vorige - Ga één kat terug",
+        "jump": "🎯 Spring - Spring naar specifiek kat nummer",
+        "next": "➡️ Volgende - Ga één kat vooruit",
+        "last": "⏭️ Laatste - Spring naar de laatste kat"
+      },
+      "sorting": "📊 Sorteer Opties",
+      "sorting_details": {
+        "date": "📅 Op Datum - Nieuwste katten eerst",
+        "rarity": "🌟 Op Zeldzaamheid - Zeldzaamste katten eerst",
+        "alpha": "🔤 Alfabetisch - Sorteer op naam A-Z"
+      },
+      "utility": "🛠️ Hulpmiddel Functies",
+      "utility_details": {
+        "stats": "📊 Statistieken - Bekijk gedetailleerde statistieken over je verzameling",
+        "refresh": "🔄 Vernieuwen - Herlaad galerij data",
+        "help": "❓ Hulp - Toon dit hulp menu"
+      },
+      "footer": "Galerij Hulp • Geniet van je verzameling!"
+    },
+    "stats": {
+      "title": "💎 Galerij Statistieken van {{username}}",
+      "overview": "📚 Verzameling Overzicht",
+      "rarity_breakdown": "⭐ Overzicht van Zeldzaamheden",
+      "footer": "Galerij Statistieken • Live Data"
+    },
+    "labels": {
+      "type": "Type",
+      "rarity": "Zeldzaamheid",
+      "total_cats": "Totaal Aantal Katten",
+      "completion": "Voortgang",
+      "enter_cat_number": "Voer kat nummer in (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Voer kat nummer in (1 - {{max}})",
+      "invalid": "❌ Ongeldig kat nummer. Voer een nummer tussen 1 en {{max}} in."
+    }
+  },
+  "commands": {
+    "cat": { "name": "kat" },
+    "gallery": { "name": "galerij" },
+    "rename": { "name": "hernoem" },
+    "top": { "name": "top" },
+    "profile": { "name": "profiel" },
+    "stats": { "name": "statistieken" },
+    "vote": { "name": "stem" },
+    "announcement": { "name": "aankondiging" },
+    "invite": { "name": "uitnodiging" },
+    "serverinfo": { "name": "serverinfo" },
+    "rarity": { "name": "zeldzaamheid" },
+    "help": { "name": "hulp" },
+    "trade": { "name": "ruil" }
+  },
+  "profanity": {
+    "warning_title": "Miauw... Dat is geen leuke naam!",
+    "warning_description": "Ik kan die naam niet gebruiken voor je kat. Laten we hem **{{newName}}** noemen in plaats daarvan!",
+    "reminder": "🐱 **Onthoud:** Onze katten verdienen liefdevolle, vriendelijke namen!",
+    "tip": "💡 **Tip:** Probeer namen zoals Luna, Milo, Bella, of laat mij een nummer kiezen!",
+    "footer": "MiauDex • Houd het vriendelijk! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Krijg de MIAU Tag"
+    }
+  },
+  "translations": {
+    "authors": [{ "Quincy": "467310209312882709" }]
+  }
+}
