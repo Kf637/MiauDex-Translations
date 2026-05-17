@@ -1,32 +1,26 @@
 const fs = require("fs");
-const path = require("path");
 
 function validateTranslation(filePath) {
   try {
     const content = fs.readFileSync(filePath, "utf8");
     const data = JSON.parse(content);
 
-    console.log(`✅ ${filePath} - Valid JSON structure`);
+    console.log(`${filePath} - Valid JSON`);
 
     const jsonString = JSON.stringify(data);
-    const issues = [];
+    const warnings = [];
 
-    if (
-      jsonString.includes('"Click here"') ||
-      jsonString.includes('"undefined"')
-    ) {
-      issues.push("Possible untranslated English text found");
+    if (jsonString.includes('"Click here"') || jsonString.includes('"undefined"')) {
+      warnings.push("Possible untranslated English text found");
     }
 
-    if (issues.length > 0) {
-      console.log(`⚠️  Warnings for ${filePath}:`);
-      issues.forEach((issue) => console.log(`   - ${issue}`));
+    if (warnings.length > 0) {
+      console.log("Warnings:");
+      warnings.forEach((w) => console.log(`  - ${w}`));
     }
-
-    return true;
   } catch (error) {
-    console.log(`❌ ${filePath} - Invalid: ${error.message}`);
-    return false;
+    console.log(`Invalid JSON: ${error.message}`);
+    process.exit(1);
   }
 }
 
